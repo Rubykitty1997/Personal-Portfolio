@@ -1,0 +1,424 @@
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  border: 1px solid red;   
+
+}
+
+
+/*Apply Google Fonts as 'Poppins' */
+body{
+  font-family: "Poppins", sans-serif;
+
+}
+
+
+/*Light or dakr mode*/
+
+#light-or-dark{
+  display: flex;  
+  
+}
+ 
+#light-or-dark p{
+  flex-grow: 1;
+  text-align: right;
+  font-style: italic;  
+}
+ 
+
+button{
+  color: black; 
+  border: 2px solid #3a3a3a;
+  border-radius: 2%;
+  font-size: auto;
+  margin-top: 10px;
+  
+
+  
+  
+}
+button:hover {
+  background-color: #3a3a3a;
+  color: white;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.toggle {
+  color: white;
+ 
+}
+
+
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 890px) {
+
+  #reviews > article{   
+    grid-column: 1 / span 3;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+  #portfolio-details > section{   
+    grid-column: 1 / span 4;
+  
+  }
+
+  section h2, main h2{
+    text-align: center;
+  }
+
+}
+
+@media  only screen and (max-width: 476px) {
+
+
+
+  #personal-portfolio .top-bar > #domain {
+    align-items: center;
+    margin-left: 100px;
+    margin-right: -80px;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+
+  #personal-portfolio .top-bar > #navbar {   
+    grid-column: 1 / -1;
+       
+  }
+  
+}
+
+@media  only screen and (max-width: 446px) {
+
+  #personal-portfolio .top-bar > #navbar {   
+
+    text-align: center;
+    padding: 5px;
+
+  }
+}
+
+@media  only screen and (max-width: 320px) {
+
+  #personal-portfolio .top-bar > #domain {
+    align-items: center;
+    margin-left: 50px;
+    margin-right: -70px;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+}
+
+@media  only screen and (max-width: 346px) {
+
+  #personal-portfolio .top-bar > #navbar {   
+    grid-column: 1 / -1;
+     
+  }
+  #personal-portfolio .top-bar > #domain {   
+    
+    flex-wrap: wrap;
+    
+  }
+ 
+}
+
+/*personal portfolio*/
+
+#personal-portfolio{
+  margin-bottom: auto;
+  border: 2px solid black;
+
+  
+}
+
+
+
+
+.top-bar{
+  
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+ 
+ 
+.top-bar > nav{
+  font-weight: 600;
+}
+
+ 
+
+#domain{
+  display: flex;  
+  margin-top: 5px;
+}
+
+.my-profile{
+  height: 20px;
+  width: 20px;
+  background-color: #555;
+}
+
+ 
+#navbar {
+  padding-top: 6px;
+   
+  text-align: right;
+   
+}
+ 
+ 
+
+
+#navbar a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+
+
+
+header{
+  text-align: center;
+  
+  padding-top: 30px;
+  padding-bottom: 60px;
+   
+}
+
+header h1 {
+  margin-bottom: 10px;
+
+}
+
+header p{
+  color: rgb(101, 101, 101);
+   
+}
+ 
+
+/*Portfolio details*/
+
+
+
+#portfolio-details{
+  
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1.2fr; /*this replaces the way to adjust the margin of each columns*/
+  margin-top: auto; 
+  margin-bottom: auto;
+  
+  border-style: solid none none none;
+   
+}
+
+
+
+.col-1  h2, #review-part{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: auto;
+ 
+
+  padding-left: 20px;
+  padding-top: 10px;
+
+  
+   
+}
+
+.col-2  h2{
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 8px;
+  padding-top: 10px;
+   
+}
+
+.col-3  h2{
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 8px;
+  padding-top: 10px;
+   
+}
+
+
+#portfolio-details > section{
+ 
+  padding-bottom: 70px;
+  margin: 0px;
+  border: 2px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+
+
+
+
+.line:first-of-type {
+  border: 2px solid black;
+  border-style: none none solid none;
+  
+  
+}
+
+.line:last-of-type {
+  
+  border-style: none;
+  
+  
+}
+
+ 
+.project-list{
+ 
+  margin-left: 0;
+  margin-right: 0;
+   
+
+}
+ 
+
+.project-list li{
+  list-style-type: none;
+  border: 2px solid black;
+  border-style: none none solid none;
+ 
+  padding-bottom: 12.5px;
+ 
+  padding-left: 20px;
+  padding-top: 5px;  
+  margin-right: 0;
+  margin-left: -40px;
+  
+
+   
+}
+
+
+.col-2 > div{
+  margin: auto;
+
+}
+
+.work:first-of-type {
+  margin-bottom: 20px;
+}
+
+.work:nth-of-type(2){
+  border-top: 2px solid black;
+  margin: 0; 
+  
+}
+
+
+
+.courses-list li {
+  
+  margin-top: auto; 
+  margin-left: 20px;
+}
+
+.col-3 > p:first-of-type, .courses-list {
+  margin: auto;
+  padding-left: 10px;
+}
+
+
+
+
+
+/* Reviews */
+
+#review-part{
+  border: 2px solid black;
+  margin-top: auto;
+  padding-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-style: solid solid solid solid;
+  
+}
+
+
+
+
+
+#reviews{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  
+}
+
+#reviews > article{
+  border-radius: 28px;
+  border: 1px solid black;
+  border-width: 2px;
+  padding: 10px 10px 50px 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+
+  
+}
+
+#review-part > h2, #reviews, footer{
+  margin-left: -20px;
+  margin-right: auto;
+  padding-left: auto;
+}
+
+#review-part > h2{
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+.teacher, .teacher-job{
+  font-style: italic;
+  color: rgb(101, 101, 101);
+  
+}
+
+.teacher{
+  margin-bottom: auto;
+}
+.teacher-job{
+  margin-top: auto;
+}
+
+footer {
+  text-align: center;
+  padding-top: 100px;
+  
+}
+
+
+ 
+

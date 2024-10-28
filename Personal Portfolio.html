@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <link rel="stylesheet" href='Personal Portfolio.css'>
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	  <meta charset="UTF-8">
+	  <meta name="description" content="Frontend Developer">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="John Doe">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+	  <title>Frontend Developer CV</title>
+		
+	</head>
+	<body>
+		<!--Light or dark mode-->
+		<div id="light-or-dark" style="text-align: center">
+			<p>Change the light or dark theme as you wish</p> 
+			<button id="switch" onclick="toggleLabel()">Light Theme</button>
+		</div>
+
+		<script>
+			function toggleLabel() {
+				let element = document.body;			
+				element.classList.toggle("dark-mode");
+ 
+				
+				var x = document.getElementById('switch');
+					if (x.innerHTML === "Light Theme") {
+						x.innerHTML = "Dark Theme";
+					} else {
+						x.innerHTML = "Light Theme";
+					}
+	
+	 
+			}
+
+		
+
+		</script>
+
+		<!--My website-->
+		<main id='personal-portfolio'>
+			<section class="top-bar">
+				 
+				<nav id="domain">
+				  <div class="my-profile"></div>
+				  <p class="CV-name">Your name</p>
+				</nav>
+
+			
+				<nav id="navbar">
+				  <a href="#homepage">Homepage  </a> /  
+				  <a  href="#projects">Projects  </a> /
+				  <a href="#articles/">Articles  </a> /
+				  <a href="Contact-form Roadmap sh.html">Contact</a> 
+				</nav>
+
+			</section>
+
+			<header>
+				<h1>Frontend Developer</h1>
+				<p id="link">html only with proper layout, no styling</p>
+			</header>
+		</main>
+		 
+		 
+
+	<!--Portfolio details-->
+	 	
+		<main id='portfolio-details'>
+			
+			<section id='projects' class="col-1">
+				<h2>Projects</h2>
+				<ul class="project-list">
+					<li class="line">HTML Only Portfolio</li>
+					<li class="line">Calculator</li>
+					<li class="line">Quiz App</li>
+					<li class="line">Countdown Timer</li>
+					<li class="line">Product Upcoming Page</li>
+				</ul>
+			</section>
+			
+			<section class="col-2">
+				<h2>Work Experiences</h2>
+				<div class="work">
+					<h3 class='roadmap'>roadmap.sh</h3>
+					<p>Solved all the frontend projects</p>
+					<a href='#visit-my-profile'>Visit my Profile</a>
+				</div>
+
+				<div class="work">
+					<h3 class='opensource-work'>OpenSource Work</h3>
+					<p>Contributed to 50 opensource projects. Made my own projects with 200 Github Stars</p>
+					<a href='#visit-my-github-profile'>Visit my Github Profile</a>
+				</div>
+			</section>
+		 
+			<section class="col-3">
+				<h2>Education</h2>
+				<p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions</p>
+				<p>Course I took</p>
+					<ul class="courses-list">
+						<li class="course">Object Oriented Programming</li>
+						<li class="course">Data Structures and Algorithms</li>
+						<li class="course">Web Engineering</li>
+					</ul>
+			</section>
+		
+
+		</main>
+
+		
+		<main id="review-part">
+			<h2>Reviews from my teachers</h2>
+			
+			<section id="reviews">
+				<article>
+					<p>John doe was a brilliant student; always stood with his assignments</p>
+					<p id="link" class="teacher">Jane Doe</p>
+					<p id="link" class="teacher-job">Assistant Professor</p>
+				</article>
+
+				<article>
+					<p>John doe was a brilliant student; always stood with his assignments</p>
+					<p id="link" class="teacher">Jane Doe</p>
+					<p id="link" class="teacher-job">Assistant Professor</p>
+				</article>
+
+				<article>
+					<p>John doe was a brilliant student; always stood with his assignments</p>
+					<p id="link" class="teacher">Jane Doe</p>
+					<p id="link" class="teacher-job">Assistant Professor</p>
+				</article>
+			</section>
+			
+		
+		
+		<footer>
+			@all rights reserved 2025
+		</footer>
+
+		</main>
+
+		 
+		
+
+
+	</body>
+</html>
