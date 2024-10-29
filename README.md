@@ -11,4 +11,5 @@ Thanks
 ## About the project
 
 **Unchanged color after toggling 'Dark Mode'**: I struggled to change the color of <a> and other <p> elements to 'white', but still didin't work
+
  
